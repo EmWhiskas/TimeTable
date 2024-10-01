@@ -1,0 +1,424 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Смена 1</title>
+    <link rel="stylesheet" href="{% static 'css/smena1.css'  %}">
+</head>
+<body>
+<header>
+    <h1>Актуальное расписание 1 смены</h1>
+    <h1>МАОУ СШ №17</h1>
+</header>
+    <table>
+        <tr>
+            <td class="data", colspan="10">{{ mas.0.2 }}</td>
+            <td class="space"></td>
+            <td class="data2", colspan="8">{{ mas.0.11 }}</td>
+        </tr>
+        <tr>
+            <td class="day", colspan="10">{{ mas.1.2 }}</td>
+            <td class="space"></td>
+            <td class="day" colspan="10">{{ mas.1.11 }}</td>
+        </tr>
+        <tr>
+
+            {% for item in mas.2 %}
+                {% if item != '' %}
+                    {% if item != 'Делитель' %}
+                        {% if item != 'НЕТ КЛАССА' %}
+                        <td class="numclass", colspan="2">
+                            {{ item }}
+                        </td>
+                        {% else %}
+                            <td colspan="2"></td>
+                        {% endif %}    
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% endif %}
+            {% endfor %}
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            {% for item in mas.3 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            {% for item in mas.4 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            {% for item in mas.5 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            {% for item in mas.6 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr> 
+        <tr>
+            {% for item in mas.7 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            {% for item in mas.8 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            {% for item in mas.9 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}    
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="day", colspan="10">{{ mas.10.2 }}</td>
+            <td class="space"></td>
+            <td class="day" colspan="10">{{ mas.10.11 }}</td>
+        </tr>
+        <tr>
+
+            {% for item in mas.11 %}
+                {% if item != '' %}
+                    {% if item != 'Делитель' %}
+                        {% if item != 'НЕТ КЛАССА' %}
+                        <td class="numclass", colspan="2">
+                            {{ item }}
+                        </td>
+                        {% else %}
+                            <td colspan="2"></td>
+                        {% endif %}
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.12 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.13 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.14 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.15 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.16 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.17 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.18 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+
+        <tr>
+            <td class="day", colspan="10">{{ mas.21.2 }}</td>
+            <td class="space"></td>
+            <td class="day" colspan="10">{{ mas.21.11 }}</td>
+        </tr>
+        <tr>
+
+            {% for item in mas.22 %}
+                {% if item != '' %}
+                    {% if item != 'Делитель' %}
+                        {% if item != 'НЕТ КЛАССА' %}
+                        <td class="numclass", colspan="2">
+                            {{ item }}
+                        </td>
+                        {% else %}
+                            <td colspan="2"></td>
+                        {% endif %}
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.23 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.24 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.25 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.25 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.26 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.27 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.28 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.29 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.30 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.31 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    </table>
+<footer>
+    <h1>Продам гараж</h1>
+    <h1>+79246816491</h1>
+</footer>
+</body>
+</html>
