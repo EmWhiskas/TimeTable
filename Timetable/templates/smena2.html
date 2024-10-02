@@ -3,24 +3,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Смена 1</title>
-    <link rel="stylesheet" href="{% static 'css/smena1.css'  %}">
+    <title>Смена 2</title>
+    <link rel="stylesheet" href="{% static 'css/smena2.css'  %}">
 </head>
 <body>
 <header>
-    <h1>Актуальное расписание 1 смены</h1>
+    <h1>Актуальное расписание 2 смены</h1>
     <h1>МАОУ СШ №17</h1>
 </header>
     <table>
         <tr>
-            <td class="data", colspan="10">{{ mas.0.2 }}</td>
+            <td class="data", colspan="12">{{ mas.0.0 }}</td>
             <td class="space"></td>
-            <td class="data2", colspan="8">{{ mas.0.11 }}</td>
+            <td class="data2", colspan="10">{{ mas.0.13 }}</td>
         </tr>
         <tr>
-            <td class="day", colspan="10">{{ mas.1.2 }}</td>
+            <td class="day", colspan="12">{{ mas.1.2 }}</td>
             <td class="space"></td>
-            <td class="day" colspan="8">{{ mas.1.11 }}</td>
+            <td class="day" colspan="10">{{ mas.1.13 }}</td>
         </tr>
         <tr>
 
@@ -39,6 +39,7 @@
                     {% endif %}    
                 {% endif %}
             {% endfor %}
+
         </tr>
         <tr>
             {% for item in mas.3 %}
@@ -47,12 +48,11 @@
                         <td>{{ item }}</td>
                     {% else %}
                         <td class="space"></td>
-                    {% endif %}    
+                    {% endif %}
                 {% else %}
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
         <tr>
             {% for item in mas.4 %}
@@ -61,12 +61,11 @@
                         <td>{{ item }}</td>
                     {% else %}
                         <td class="space"></td>
-                    {% endif %}    
+                    {% endif %}
                 {% else %}
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
         <tr>
             {% for item in mas.5 %}
@@ -80,7 +79,6 @@
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
         <tr>
             {% for item in mas.6 %}
@@ -94,7 +92,6 @@
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr> 
         <tr>
             {% for item in mas.7 %}
@@ -108,7 +105,6 @@
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
         <tr>
             {% for item in mas.8 %}
@@ -122,7 +118,6 @@
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
         <tr>
             {% for item in mas.9 %}
@@ -136,16 +131,14 @@
                     <td></td>
                 {% endif %}
             {% endfor %}
-
         </tr>
 
         <tr>
-            <td class="day", colspan="10">{{ mas.10.2 }}</td>
+            <td class="day", colspan="12">{{ mas.10.2 }}</td>
             <td class="space"></td>
-            <td class="day" colspan="8">{{ mas.10.11 }}</td>
+            <td class="day" colspan="10">{{ mas.10.13 }}</td>
         </tr>
         <tr>
-
             {% for item in mas.11 %}
                 {% if item != '' %}
                     {% if item != 'Делитель' %}
@@ -253,15 +246,26 @@
                 {% endif %}
             {% endfor %}
         </tr>
-
         <tr>
-            <td class="day", colspan="10">{{ mas.21.2 }}</td>
-            <td class="space"></td>
-            <td class="day" colspan="8">{{ mas.21.11 }}</td>
+            {% for item in mas.19 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
         </tr>
         <tr>
-
-            {% for item in mas.22 %}
+            <td class="day", colspan="12">{{ mas.20.2 }}</td>
+            <td class="space"></td>
+            <td class="day" colspan="10">{{ mas.20.13 }}</td>
+        </tr>
+        <tr>
+            {% for item in mas.11 %}
                 {% if item != '' %}
                     {% if item != 'Делитель' %}
                         {% if item != 'НЕТ КЛАССА' %}
@@ -274,6 +278,19 @@
                     {% else %}
                         <td class="space"></td>
                     {% endif %}
+                {% endif %}
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for item in mas.22 %}
+                {% if item != 'НЕТ КЛАССА' %}
+                    {% if item != 'Делитель' %}
+                        <td>{{ item }}</td>
+                    {% else %}
+                        <td class="space"></td>
+                    {% endif %}
+                {% else %}
+                    <td></td>
                 {% endif %}
             {% endfor %}
         </tr>
@@ -370,32 +387,6 @@
         </tr>
         <tr>
             {% for item in mas.29 %}
-                {% if item != 'НЕТ КЛАССА' %}
-                    {% if item != 'Делитель' %}
-                        <td>{{ item }}</td>
-                    {% else %}
-                        <td class="space"></td>
-                    {% endif %}
-                {% else %}
-                    <td></td>
-                {% endif %}
-            {% endfor %}
-        </tr>
-        <tr>
-            {% for item in mas.30 %}
-                {% if item != 'НЕТ КЛАССА' %}
-                    {% if item != 'Делитель' %}
-                        <td>{{ item }}</td>
-                    {% else %}
-                        <td class="space"></td>
-                    {% endif %}
-                {% else %}
-                    <td></td>
-                {% endif %}
-            {% endfor %}
-        </tr>
-        <tr>
-            {% for item in mas.31 %}
                 {% if item != 'НЕТ КЛАССА' %}
                     {% if item != 'Делитель' %}
                         <td>{{ item }}</td>

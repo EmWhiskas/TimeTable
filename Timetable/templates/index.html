@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная епта</title>
+    <style>
+      /* Add the CSS styles here */
+      .but-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .but1, .but2 {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .but1 {
+        background-color: #007bff; /* blue */
+        color: #ffffff;
+      }
+
+      .but2 {
+        background-color: #87ceeb; /* light blue */
+        color: #333333;
+      }
+
+      .but1:hover, .but2:hover {
+        opacity: 0.8;
+      }
+    </style>
 </head>
 <body>
-<a href="{% url 'smena1' %}">СМЕНА ОДИН(.)</a>
+  <!-- Wrap the buttons in a container element -->
+  <div class="but-container">
+    <div class="but1">
+      <a href="{% url 'smena1' %}">СМЕНА ОДИН(.)</a>
+    </div>
+    <div class="but2">
+      <a href="{% url 'smena2' %}">СМЕНА ДВА(.Y.)</a>
+    </div>
+  </div>
 </body>
 </html>
